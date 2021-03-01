@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en"> 
+
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Pranali Talpade</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
+
+   <!-- script
+   ================================================== -->   
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+
+</head>
+
+<body id="top">
+
+	
+
+	<!-- Portfolio Section
+   ================================================== -->
+	<section id="portfolio">
+
+		<div class="row section-intro">
+	   		<div class="col-twelve">
+
+	   			<h5>Achievements</h5>
+	   			<h1>Check Out Some of My Certificates.</h1>
+
+	   			<p class="lead">Here is a collection of some of my certificates. <br>
+	   				<span>Click on images below to enlarge </span>
+	   			</p>
+
+	   		</div>   		
+	   	</div> <!-- /section-intro--> 
+
+	   	<div class="row portfolio-content">
+
+	   		<div class="col-twelve">
+
+	   			<!-- Trigger the Modal -->
+				<img class="myImg myworkimg" src="images/certificates/ux_kickstarter_workshop.png" alt="UX Kickstarter Workshop">
+				<img class="myImg myworkimg" src="images/certificates/csi_infocomm2016.jpg" alt="Attended CSI-InfoComm India 2016 - Summit  as a member of Computer Society of India">
+				<img class="myImg myworkimg" src="images/certificates/csi_it2020-2016.jpg" alt="Attended CSI-IT 2020 Conference & IT Innovation & Excellence Awards as a member of Computer Society of India ">
+				<img class="myImg myworkimg" src="images/certificates/paper_ppt.jpg" alt="Paper Presentation on Electronic-Waste">
+				<img class="myImg myworkimg" src="images/certificates/sndtplacecomm.jpg" alt="A member of Placement Committe in the college">
+
+				<img class="myImg myworkimg" src="images/certificates/swadisha.jpg" alt="A Part of Swadisha Team">
+				<img class="myImg myworkimg" src="images/certificates/ttweb2017.jpg" alt="Tech Tornado 2017 as the member of the Event Website creation team">
+				<img class="myImg myworkimg" src="images/certificates/ttzdt2017.jpg" alt="Tech Tornado 2017 as the Head of ZONA-DE-TEST Event">
+				<img class="myImg myworkimg" src="images/certificates/technext2017.jpg" alt="Volunteer in Technext India 2017 Annual Academic Conference & Awards ">
+				<img class="myImg myworkimg" src="images/certificates/ppmca.jpg" alt="Educational Merit Prize by Pathare Prabhu Charities">
+				<img class="myImg myworkimg" src="images/certificates/ppbscit.jpg" alt="Educational Merit Prize by Pathare Prabhu Charities">
+
+	   		</div>  <!-- /twelve -->  
+
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+
+			  <!-- The Close Button -->
+			  <span class="close">&times;</span>
+
+			  <!-- Modal Content (The Image) -->
+			  <img class="modal-content" id="img01">
+
+			  <!-- Modal Caption (Image Text) -->
+			  <div id="caption"></div>
+			</div> 
+
+	   	</div> <!-- /portfolio-content --> 
+		
+	</section> 
+
+	<!-- /portfolio --> 
+	
+
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
+   <script type="text/javascript">
+		$('.close').click(function(){
+			$('#myModal').hide();
+		});
+
+		$('.myImg').click(function(){
+			var src = $(this).attr('src');
+			var captionText = $(this).attr('alt');
+			$('#img01').attr('src',src);
+			$('#caption').text(captionText);
+			$('#myModal').show();
+		});
+
+		$("#myModal").click(function(ev){
+		    if(ev.target != this) return;
+		    $('#myModal').hide();
+	  	});
+
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en"> 
+
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Pranali Talpade</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
+
+   <!-- script
+   ================================================== -->   
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+
+</head>
+
+<body id="top">
+
+	
+
+	<!-- Portfolio Section
+   ================================================== -->
+	<section id="portfolio">
+
+		<div class="row section-intro">
+	   		<div class="col-twelve">
+
+	   			<h5>Portfolio</h5>
+	   			<h1>Check Out Some of My Works.</h1>
+
+	   			<p class="lead">Here is a collection of some of my personal creations. <br>
+	   				<span>Click on images below to enlarge </span>
+	   			</p>
+
+
+	   		</div>   		
+	   	</div> <!-- /section-intro--> 
+
+	   	<div class="row portfolio-content">
+
+	   		<div class="col-twelve">
+
+	   			<!-- Trigger the Modal -->
+				<img class="myImg myworkimg" src="images/personal_creatives/AadharRecpAnu.png" alt="Aadhar Anushree Reception invite">
+				<img class="myImg myworkimg" src="images/personal_creatives/invitewhatsapp.jpg" alt="Wedding Invite for Whatsapp">
+				<img class="myImg myworkimg" src="images/personal_creatives/AadharWedsAnu.png" alt="Aadhar Anushree Wedding Invite">
+				<img class="myImg myworkimg" src="images/personal_creatives/banner.png" alt="Diwali website Banner options">
+				<img class="myImg myworkimg" src="images/personal_creatives/banner2.png" alt="Diwali website Banner options">
+
+				<img class="myImg myworkimg" src="images/personal_creatives/diwaliwa-creative.png" alt="Diwali creative to share on whatsapp">
+				<img class="myImg myworkimg" src="images/personal_creatives/manjeetinvite.jpeg" alt="Manjeet Reception Invite ">
+				<img class="myImg myworkimg" src="images/personal_creatives/manjeet2.jpeg" alt="Manjeet Reception Invite">
+				<img class="myImg myworkimg" src="images/personal_creatives/option1.png" alt="Option 1 Dummy webpage">
+				<img class="myImg myworkimg" src="images/personal_creatives/option2.png" alt="Option 2 Dummy webpage">
+				<img class="myImg myworkimg" src="images/personal_creatives/PranojwedsKritikapg1.jpg" alt="Pranoj Kritika Wedding Invite page1">
+				<img class="myImg myworkimg" src="images/personal_creatives/PranojwedsKritika.jpg" alt="Pranoj Kritika Wedding Invite">
+
+	   		</div>  <!-- /twelve -->  
+
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+
+			  <!-- The Close Button -->
+			  <span class="close">&times;</span>
+
+			  <!-- Modal Content (The Image) -->
+			  <img class="modal-content" id="img01">
+
+			  <!-- Modal Caption (Image Text) -->
+			  <div id="caption"></div>
+			</div> 
+
+	   	</div> <!-- /portfolio-content --> 
+		
+	</section> 
+
+	<!-- /portfolio --> 
+	
+
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
+   <script type="text/javascript">
+		$('.close').click(function(){
+			$('#myModal').hide();
+		});
+
+		$('.myImg').click(function(){
+			var src = $(this).attr('src');
+			var captionText = $(this).attr('alt');
+			$('#img01').attr('src',src);
+			$('#caption').text(captionText);
+			$('#myModal').show();
+		});
+
+		$("#myModal").click(function(ev){
+		    if(ev.target != this) return;
+		    $('#myModal').hide();
+	  	});
+
+   </script>
+</body>
+
+</html>
